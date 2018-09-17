@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập số</title>
+</head>
+<body>
+<script>
+    let number1 = prompt('nhập số');
+    let number = number1.toString();
+    let ketqua = [number[0]];
+    for (let i = 1; i < number.length; i++) {
+        if (number[i - 1] % 2 === 0 && number[i] % 2 === 0) {
+            ketqua.push("-", number[i]);
+        } else {
+            ketqua.push(number[i]);
+        }
+    }
+    alert(ketqua.join(''));
+</script>
+</body>
+</html>
